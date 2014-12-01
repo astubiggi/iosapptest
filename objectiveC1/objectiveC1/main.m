@@ -16,6 +16,11 @@ int main(int argc, const char * argv[]) {
 //        NSLog(@"Hello, Worlxd! %d", h);
 //    }
     
-    rect *rect = {[rect alloc]};
+    rect *Rectangle = [[rect alloc] init];
+    
+    [Rectangle SetWidth:10];
+    [Rectangle SetHeight:30];
+    [Rectangle SetHeight:50 width:60];
+    NSLog(@"width is %d and height is %d", [Rectangle width], [Rectangle height]);
     return 0;
 }
